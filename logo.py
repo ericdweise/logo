@@ -65,6 +65,7 @@ def canopy(n_iter):
                     y_center = parent.y_center - radius - parent.radius
                 children.append(circle(x_center, y_center, radius, grow_dir))
 
+    contents.extend(parents)
     contents.extend(children)
 
     return contents
@@ -105,5 +106,5 @@ def write_svg_file(contents, path, **kwargs):
 
 
 if __name__ == '__main__':
-    c = canopy(3)
+    c = canopy(6)
     write_svg_file(c, 'test.svg', fill='blue')
