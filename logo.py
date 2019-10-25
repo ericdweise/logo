@@ -35,7 +35,7 @@ def canopy(n_iter):
 
     parents = []
     children = []
-    svg_contents = []
+    contents = []
 
     children.append(circle(0, 0, 2**n_iter, 3))
 
@@ -43,7 +43,7 @@ def canopy(n_iter):
 
         radius = 2**(n_iter - step)
 
-        svg_contents.extend(parents)
+        contents.extend(parents)
         parents = children
         children = []
 
@@ -65,9 +65,9 @@ def canopy(n_iter):
                     y_center = parent.y_center - radius - parent.radius
                 children.append(circle(x_center, y_center, radius, grow_dir))
 
-    svg_contents.extend(children)
+    contents.extend(children)
 
-    return svg_contents
+    return contents
 
 
 def translate(svg_list, dx=0, dy=0):
@@ -84,8 +84,26 @@ def scale(svg_list, m):
     pass
 
 
-def write_svg_file(svg_contents, path):
+def write_svg_file(contents, path, **kwargs):
     """
-    Will convert contents of the list svg_contents into XML and write this to a file.
+    Will convert contents of the list contents into XML and write this to a file.
     """
-    pass
+    import svgwrite
+
+    drawing = svgwrite.Drawing(filename=path)
+
+    for elt in contents:
+        if type(elt==circle):
+            drawing.add(svgwrite.shapes.Circle(
+                    center=(elt.x_center,elt.y_center),
+                    r=elt.radius,
+                    **kwargs))
+        else:
+            raise Exception('Unknown class in contents: {}'.format(type(elt)))
+
+    drawing.save()
+
+
+if __name__ == '__main__':
+    c = canopy(3)
+    write_svg_file(c, 'test.svg', fill='blue')
