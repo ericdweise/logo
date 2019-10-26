@@ -95,4 +95,4 @@ class Logo(object):
 if __name__ == '__main__':
     l = Logo()
     l.canopy(8, 128)
-    l.write_svg('test.svg', fill='blue')
+    l.write_svg('canopy-8-iterations.svg', fill='blue')
