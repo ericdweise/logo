@@ -1,7 +1,7 @@
 """
 """
 
-class circle(object):
+class Circle(object):
     """
     """
 
