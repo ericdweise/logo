@@ -3,17 +3,23 @@ from circle import Circle
 
 class Logo(object):
     """
-    Class that builds the logo graphic
+    Class that builds the logo graphic.
     """
 
     contents = []
 
 
-    def canopy(self, n_iter, radius=None):
+    def canopy(self, n_iter, radius=128):
+        """
+        Will create the 'canopy' of the tree. This is the fractal built
+        out of circles and represents the leaves of the logo.
 
-        # Find initial radius if not provided:
-        if radius == None:
-            radius = 2**(n_iter)
+        Args:
+            n_iter: The number of iterations of the fractal rendered
+                before termination. Must be an integer > 0.
+            radius: The radius of the first (largest) circle in the
+                fractal. [OPTIONAL, default=128)
+        """
 
         # Find center of first circle
         cx = 3*radius
@@ -55,9 +61,20 @@ class Logo(object):
         self.contents.extend(children)
 
 
+    # TODO: Add method to build tree trunk
+
+    # TODO: Add method to build roots
+
     def write_svg(self, path, **kwargs):
         """
         Will convert self.contents into XML and write this to a file.
+
+        Args:
+            path: File location where the SVG file will be saved.
+
+        Kwargs:
+            Any key word arguments supported by svgwrite.Drawing.save().
+            For example: fill='blue'.
         """
         import svgwrite
 
