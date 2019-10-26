@@ -9,6 +9,7 @@ class Logo(object):
     contents = []
 
 
+    # TODO: Add rotation by theta, compounding every iteration.
     def canopy(self, n_iter, radius=128):
         """
         Will create the 'canopy' of the tree. This is the fractal built
