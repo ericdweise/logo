@@ -102,6 +102,14 @@ def write_svg_file(contents, path, **kwargs):
         else:
             raise Exception('Unknown class in contents: {}'.format(type(elt)))
 
+    # Set SVG viewbox to include entire image
+    boundary = find_boundary(contents)
+    drawing.viewbox(
+            minx=boundary['xmin'],
+            miny=boundary['ymin'],
+            width=boundary['xmax'] - boundary['xmin'],
+            height=boundary['ymax'] - boundary['ymin'])
+
     drawing.save()
 
 
