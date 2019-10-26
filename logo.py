@@ -105,6 +105,28 @@ def write_svg_file(contents, path, **kwargs):
     drawing.save()
 
 
+def find_boundary(contents):
+    xmax = -float('inf')
+    ymax = -float('inf')
+    xmin = float('inf')
+    ymin = float('inf')
+
+    for elt in contents:
+        if type(elt) == circle:
+            if xmax < elt.x_center + elt.radius:
+                xmax = elt.x_center + elt.radius
+            if xmin > elt.x_center - elt.radius:
+                xmin = elt.x_center - elt.radius
+            if ymax < elt.y_center + elt.radius:
+                ymax = elt.y_center + elt.radius
+            if ymin > elt.y_center - elt.radius:
+                ymin = elt.y_center - elt.radius
+        else:
+            raise Exception('Unknown class in contents: {}'.format(type(elt)))
+
+        return {'xmax': xmax, 'xmin': xmin, 'ymax': ymax, 'ymin': ymin}
+
+
 if __name__ == '__main__':
     c = canopy(6)
     write_svg_file(c, 'test.svg', fill='blue')
