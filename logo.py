@@ -128,4 +128,4 @@ if __name__ == '__main__':
     l = Logo()
     l.canopy(args.iterations, args.base_radius, args.rotate)
     if args.file:
-        l.write_svg(args.file, fill='blue')
+        l.write_svg(args.file, fill='#125E87')
