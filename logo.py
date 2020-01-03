@@ -34,12 +34,11 @@ class Logo(object):
         parents = []
         children = []
 
-        children.append(Circle(cx, cy, radius, 270))
+        children.append(Circle(cx, cy, radius, None))
         angle_sum = 0
 
         for step in range(1, n_iter):
 
-            radius = radius/2
             angle_sum += angle
 
             self.contents.extend(parents)
@@ -47,16 +46,28 @@ class Logo(object):
             children = []
 
             for parent in parents:
-
                 for grow_dir in (0, 90, 180, 270):
                     radians = grow_dir*pi/180
-                    if abs(parent.grow_dir - grow_dir) == 180:
+                    
+                    if parent.grow_dir is None:
+                        if grow_dir == 90:
+                            continue
+                    elif abs(parent.grow_dir - grow_dir) == 180:
                         continue
 
-                    x_center = parent.x_center + 3*radius*cos(angle_sum + radians)
-                    y_center = parent.y_center + 3*radius*sin(angle_sum + radians)
+                    rad = parent.radius/2
+                    if not parent.grow_dir == None:
+                        if angle > 0:
+                            if grow_dir - parent.grow_dir in (90, -270):
+                                rad = (1-0.02*angle*180/pi)*rad
+                        elif angle < 0:
+                            if parent.grow_dir - grow_dir in (90, -270):
+                                rad = (1+0.02*angle*180/pi)*rad
 
-                    children.append(Circle(x_center, y_center, radius, grow_dir))
+                    xc = parent.x_center + (parent.radius + rad)*cos(angle_sum + radians)
+                    yc = parent.y_center + (parent.radius + rad)*sin(angle_sum + radians)
+
+                    children.append(Circle(xc, yc, rad, grow_dir))
 
         self.contents.extend(parents)
         self.contents.extend(children)
@@ -98,4 +109,4 @@ class Logo(object):
 if __name__ == '__main__':
     l = Logo()
     l.canopy(8, 128, 10*pi/180)
-    l.write_svg('test-2-with-filter.svg', fill='blue')
+    l.write_svg('test.svg', fill='blue')
