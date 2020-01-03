@@ -26,6 +26,9 @@ class Logo(object):
                 parent by this many degrees.
         """
 
+        # Convert angle to radians
+        angle = angle*pi/180
+
         # Find center of first circle
         cx = 3*radius
         cy = 3*radius
@@ -107,6 +110,22 @@ class Logo(object):
 
 
 if __name__ == '__main__':
+    import argparse
+
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('-i', '--iterations', type=int, default=8,
+            help='The number of iterations to be rendered in the fractal.')
+    parser.add_argument('-b', '--base-radius', type=int, default=128,
+            help='The radius of the largest circle, in px.')
+    parser.add_argument('-r', '--rotate', type=int, default=0,
+            help='Rotate the canopy by this many degrees at each level.')
+    parser.add_argument('-f', '--file',
+            help='Save output to a file.')
+
+    args = parser.parse_args()
+
     l = Logo()
-    l.canopy(8, 128, 10*pi/180)
-    l.write_svg('test.svg', fill='blue')
+    l.canopy(args.iterations, args.base_radius, args.rotate)
+    if args.file:
+        l.write_svg(args.file, fill='blue')
