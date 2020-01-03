@@ -1,3 +1,5 @@
+from math import cos, pi, sin
+
 from circle import Circle
 
 
@@ -10,7 +12,7 @@ class Logo(object):
 
 
     # TODO: Add rotation by theta, compounding every iteration.
-    def canopy(self, n_iter, radius=128):
+    def canopy(self, n_iter, radius=128, angle=0):
         """
         Will create the 'canopy' of the tree. This is the fractal built
         out of circles and represents the leaves of the logo.
@@ -20,6 +22,8 @@ class Logo(object):
                 before termination. Must be an integer > 0.
             radius: The radius of the first (largest) circle in the
                 fractal. [OPTIONAL, default=128)
+            angle: Each iteration of the fractal is rotated from its
+                parent by this many degrees.
         """
 
         # Find center of first circle
@@ -30,32 +34,28 @@ class Logo(object):
         parents = []
         children = []
 
-        children.append(Circle(cx, cy, radius, 3))
+        children.append(Circle(cx, cy, radius, 270))
+        angle_sum = 0
 
         for step in range(1, n_iter):
 
             radius = radius/2
+            angle_sum += angle
 
             self.contents.extend(parents)
             parents = children
             children = []
 
             for parent in parents:
-                for grow_dir in range(4):
-                    if abs(parent.grow_dir - grow_dir) == 2:
+
+                for grow_dir in (0, 90, 180, 270):
+                    radians = grow_dir*pi/180
+                    if abs(parent.grow_dir - grow_dir) == 180:
                         continue
-                    if grow_dir == 0:
-                        x_center = parent.x_center + radius + parent.radius
-                        y_center = parent.y_center
-                    elif grow_dir == 1:
-                        x_center = parent.x_center
-                        y_center = parent.y_center + radius + parent.radius
-                    elif grow_dir == 2:
-                        x_center = parent.x_center - radius - parent.radius
-                        y_center = parent.y_center
-                    elif grow_dir == 3:
-                        x_center = parent.x_center
-                        y_center = parent.y_center - radius - parent.radius
+
+                    x_center = parent.x_center + 3*radius*cos(angle_sum + radians)
+                    y_center = parent.y_center + 3*radius*sin(angle_sum + radians)
+
                     children.append(Circle(x_center, y_center, radius, grow_dir))
 
         self.contents.extend(parents)
@@ -64,7 +64,9 @@ class Logo(object):
 
     # TODO: Add method to build tree trunk
 
+
     # TODO: Add method to build roots
+
 
     def write_svg(self, path, **kwargs):
         """
@@ -95,5 +97,5 @@ class Logo(object):
 
 if __name__ == '__main__':
     l = Logo()
-    l.canopy(8, 128)
-    l.write_svg('canopy-8-iterations.svg', fill='blue')
+    l.canopy(8, 128, 10*pi/180)
+    l.write_svg('test-2-with-filter.svg', fill='blue')
