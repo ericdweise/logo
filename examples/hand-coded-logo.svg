@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg baseProfile="full" viewBox="-88 -88 176 300" height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs />
-<circle cx="0" cy="0" r="30" fill=none stroke-width="4" stroke="#125E87" />
-<circle cx="48" cy="0" r="15" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-48" cy="0" r="15" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="0" cy="-48" r="15" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="72" cy="0" r="7" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="48" cy="24" r="7" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="48" cy="-24" r="7" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-48" cy="24" r="7" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-72" cy="0" r="7" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-48" cy="-24" r="7" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="24" cy="-48" r="7" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-24" cy="-48" r="7" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="0" cy="-72" r="7" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="84" cy="0" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="72" cy="12" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="72" cy="-12" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="60" cy="24" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="48" cy="36" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="36" cy="24" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="60" cy="-24" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="36" cy="-24" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="48" cy="-36" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-36" cy="24" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-48" cy="36" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-60" cy="24" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-72" cy="12" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-84" cy="0" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-72" cy="-12" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-36" cy="-24" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-60" cy="-24" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-48" cy="-36" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="36" cy="-48" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="24" cy="-36" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="24" cy="-60" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-24" cy="-36" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-36" cy="-48" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-24" cy="-60" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="12" cy="-72" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="-12" cy="-72" r="3" fill=none stroke-width="2" stroke="#125E87" />
-<circle cx="0" cy="-84" r="3" fill=none stroke-width="2" stroke="#125E87" />
+<circle cx="0" cy="0" r="30" fill="none" stroke-width="4" stroke="#125E87" />
+<circle cx="48" cy="0" r="15" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-48" cy="0" r="15" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="0" cy="-48" r="15" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="72" cy="0" r="7" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="48" cy="24" r="7" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="48" cy="-24" r="7" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-48" cy="24" r="7" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-72" cy="0" r="7" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-48" cy="-24" r="7" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="24" cy="-48" r="7" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-24" cy="-48" r="7" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="0" cy="-72" r="7" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="84" cy="0" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="72" cy="12" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="72" cy="-12" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="60" cy="24" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="48" cy="36" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="36" cy="24" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="60" cy="-24" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="36" cy="-24" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="48" cy="-36" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-36" cy="24" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-48" cy="36" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-60" cy="24" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-72" cy="12" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-84" cy="0" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-72" cy="-12" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-36" cy="-24" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-60" cy="-24" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-48" cy="-36" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="36" cy="-48" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="24" cy="-36" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="24" cy="-60" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-24" cy="-36" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-36" cy="-48" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-24" cy="-60" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="12" cy="-72" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="-12" cy="-72" r="3" fill="none" stroke-width="2" stroke="#125E87" />
+<circle cx="0" cy="-84" r="3" fill="none" stroke-width="2" stroke="#125E87" />
 <path stroke-width="2" stroke="#125E87" d="M -23,21  V 128" />
 <path stroke-width="2" stroke="#125E87" d="M  23,21  V 128" />
 <path stroke-width="8" stroke="#125E87" d="M   0,31  V 128" />
@@ -57,60 +57,60 @@
        S 0,190 6,175 6,150 4,128
        Z" />
 <!-- Left Roots -->
-<path stroke-width="2" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="2" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M -23,128
        S -23,128 -23,130 -28,135 -33,139
          -58,139 -67,144 -69,152" />
-<path stroke-width="2" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="2" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M -23,128
        S -23,128 -23,130 -28,135 -33,139
          -58,142 -59,150 -60,166" />
-<path stroke-width="1" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="1" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M -16,128
        S -16,128 -16,130 -25,145 
          -40,150 -50,155 -55,160" />
-<path stroke-width="1" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="1" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M -16,128
        S -16,128 -16,135 -25,150
          -35,155 -40,160 -45,165" />
-<path stroke-width="1" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="1" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M -16,128
        S -16,128 -16,135 -25,150
          -35,155 -37,165 -40,168" />
-<path stroke-width="1" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="1" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M -8,128
        S -8,128 -8,135 -17,150 -25,155 
          -28,157 -32,160 -32,168 -32,170" />
-<path stroke-width="1" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="1" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M -8,128
        S -8,128 -8,135 -17,150 -20,155 
          -23,160 -26,163 -26,171 -25,171" />
 <!-- Right Roots -->
-<path stroke-width="2" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="2" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M 23,128
        S 23,128 23,130 28,135 33,139
          58,139 67,144 69,152" />
-<path stroke-width="2" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="2" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M 23,128
        S 23,128 23,130 28,135 33,139
          58,142 59,150 60,166" />
-<path stroke-width="1" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="1" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M 16,128
        S 16,128 16,130 25,145 
          40,150 50,155 55,160" />
-<path stroke-width="1" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="1" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M 16,128
        S 16,128 16,135 25,150
          35,155 40,160 45,165" />
-<path stroke-width="1" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="1" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M 16,128
        S 16,128 16,135 25,150
          35,155 37,165 40,168" />
-<path stroke-width="1" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="1" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M 8,128
        S 8,128 8,135 17,150 25,155 
          28,157 32,160 32,168 32,170" />
-<path stroke-width="1" stroke="#125E87" fill=none stroke-linecap="round"
+<path stroke-width="1" stroke="#125E87" fill="none" stroke-linecap="round"
     d="M 8,128
        S 8,128 8,135 17,150 20,155 
          23,160 26,163 26,171 25,171" />
